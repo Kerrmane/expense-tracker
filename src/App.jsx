@@ -1,5 +1,6 @@
+import { IncomeInput } from "containers/IncomeInput/IncomeInput";
 import { List } from "components/List/List";
-import { ExpenseInput } from "components/Logo/ExpenseInput/ExpenseInput";
+import { ExpenseInput } from "containers/ExpenseInput/ExpenseInput";
 import { Selector, useSelector } from "react-redux";
 
 import s from "./style.module.css";
@@ -15,7 +16,7 @@ export function App() {
           Logo
         </div>
         <div className={`col-9 ${s.income_input}`}>
-          Income input
+          <IncomeInput/>
         </div>
       </div>
       <div className={`row ${s.workspace}`}>
