@@ -2,8 +2,10 @@ import { IncomeInput } from "containers/IncomeInput/IncomeInput";
 import { List } from "components/List/List";
 import { ExpenseInput } from "containers/ExpenseInput/ExpenseInput";
 import { Selector, useSelector } from "react-redux";
+import { Logo } from "components/Logo/Logo";
 
 import s from "./style.module.css";
+import { ExpenseTotal } from "components/ExpenseTotal/ExpenseTotal";
 
 
 
@@ -13,7 +15,7 @@ export function App() {
     <div className={s.main_container}>
       <div className={`row ${s.header}`}>
         <div className={`col-3`}>
-          Logo
+          <Logo  title={"MySpent"} subtitle={"Track your Expenses" }/>
         </div>
         <div className={`col-9 ${s.income_input}`}>
           <IncomeInput/>
@@ -27,7 +29,7 @@ export function App() {
           <List items = {expenseList}/>
           
           <div className={`col-12 ${s.expense_total}`}>
-            ExpenseTotal
+            < ExpenseTotal />
           </div>
         </div>
       </div>
