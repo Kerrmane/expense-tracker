@@ -5,7 +5,7 @@ import { Selector, useSelector } from "react-redux";
 import { Logo } from "components/Logo/Logo";
 
 import s from "./style.module.css";
-import { ExpenseTotal } from "components/ExpenseTotal/ExpenseTotal";
+import { ExpenseTotal } from "containers/ExpenseTotal/ExpenseTotal";
 
 
 

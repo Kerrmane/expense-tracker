@@ -29,11 +29,7 @@ export function ExpenseTotal(props) {
 
 
 
-  // const expenseList = useSelector((store)=> store.EXPENSE.expenseListe);
-  // const income = useSelector((store) => store.EXPENSE.income);
-  // const totalExpenses = expenseList.reduce((acc, currentItem) => {
-  //   return acc + currentItem.price;
-  // }, 0);
+
   
 
 
